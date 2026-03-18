@@ -1,0 +1,378 @@
+/* GLOBAL RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+/* BODY */
+
+body{
+background:url("BMW LOGO.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+color:white;
+}
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.85);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+/* HERO */
+
+.hero{
+height:92vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:url("BMW\ BACKGORUND.jpg") center/cover no-repeat;
+padding:40px;
+}
+
+.hero h1{
+font-size:65px;
+letter-spacing:2px;
+margin-bottom:15px;
+text-shadow:0 10px 30px rgba(0,0,0,0.8);
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:40px;
+color:#d4d4d4;
+}
+
+/* BUTTON */
+
+.explore-btn{
+padding:14px 40px;
+background:linear-gradient(45deg,#2563eb,#60a5fa);
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.35s;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+.explore-btn:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(0,0,0,0.8);
+}
+
+/* SECTION */
+
+section{
+padding:100px 80px;
+text-align:center;
+}
+
+section h2{
+font-size:38px;
+margin-bottom:25px;
+letter-spacing:1px;
+}
+
+/* CATEGORY GRID */
+
+.category-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.category-card{
+background:rgba(17,17,17,0.8);
+backdrop-filter:blur(10px);
+padding:30px;
+width:200px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.08);
+transition:0.35s;
+}
+
+.category-card:hover{
+transform:translateY(-10px);
+background:#2563eb;
+}
+
+/* FEATURE GRID */
+
+.feature-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.feature-card{
+background:rgba(17,17,17,0.85);
+padding:35px;
+width:240px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.1);
+transition:0.35s;
+}
+
+.feature-card:hover{
+transform:translateY(-12px);
+background:#2563eb;
+}
+
+/* PAGE TITLES */
+
+.page-title{
+text-align:center;
+font-size:48px;
+margin-top:40px;
+letter-spacing:2px;
+}
+
+.section-title{
+margin:60px 0 20px 80px;
+font-size:28px;
+letter-spacing:1px;
+}
+
+/* CAR GRID */
+
+.brand-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:35px;
+padding:40px 80px;
+}
+
+/* CAR CARD */
+
+.car-card{
+background:rgba(15,15,15,0.85);
+border-radius:14px;
+padding:20px;
+text-align:center;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(6px);
+}
+
+.car-card:hover{
+transform:translateY(-12px) scale(1.03);
+box-shadow:0 20px 50px rgba(0,0,0,0.9);
+border:1px solid rgba(37,99,235,0.6);
+}
+
+/* CAR IMAGE */
+
+.car-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:8px;
+margin-top:12px;
+}
+
+/* CAR NAME */
+
+.car-card h3{
+margin-top:10px;
+font-size:22px;
+}
+
+/* CAR TEXT */
+
+.car-card p{
+font-size:14px;
+margin-top:10px;
+color:#d1d1d1;
+}
+
+/* BOOK BUTTON */
+
+.book-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 25px;
+background:linear-gradient(45deg,#2563eb,#60a5fa);
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.35s;
+}
+
+.book-btn:hover{
+transform:scale(1.05);
+box-shadow:0 10px 30px rgba(0,0,0,0.7);
+}
+
+/* BOOKING FORM */
+
+.booking-form{
+width:450px;
+margin:70px auto;
+background:rgba(10,10,10,0.9);
+padding:45px;
+border-radius:14px;
+border:1px solid rgba(255,255,255,0.1);
+box-shadow:0 15px 50px rgba(0,0,0,0.8);
+}
+
+.booking-form label{
+display:block;
+margin-top:18px;
+font-weight:bold;
+color:#e4e4e4;
+}
+
+.booking-form input,
+.booking-form select{
+width:100%;
+padding:12px;
+margin-top:8px;
+border:none;
+border-radius:6px;
+background:#1a1a1a;
+color:white;
+}
+
+.booking-form button{
+margin-top:25px;
+width:100%;
+padding:14px;
+background:linear-gradient(45deg,#2563eb,#60a5fa);
+border:none;
+border-radius:30px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.35s;
+}
+
+.booking-form button:hover{
+transform:scale(1.03);
+box-shadow:0 10px 35px rgba(0,0,0,0.8);
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+padding:35px;
+background:black;
+margin-top:60px;
+border-top:1px solid rgba(255,255,255,0.08);
+color:#aaa;
+}
+/* NAV LINKS */
+
+.nav-links a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+.nav-links a:hover{
+color:#2563eb;
+}
+
+/* PAGE TITLE */
+
+.page-title{
+text-align:center;
+margin-top:40px;
+font-size:40px;
+}
+
+/* FOOTER */
+
+.footer{
+background:black;
+padding:20px;
+text-align:center;
+margin-top:60px;
+border-top:1px solid #222;
+}
+.price{
+color:#FFD700;
+font-weight:bold;
+font-size:18px;
+letter-spacing:1px;
+}
+.booking-form textarea{
+width:100%;
+padding:12px;
+margin-top:12px;
+border:none;
+border-radius:5px;
+resize:none;
+}
+h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: inherit;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+h1{
+text-align:center;
+font-size:48px;
+margin-top:30px;
+margin-bottom:30px;
+letter-spacing:2px;
+}
+.car-card{
+background:#111;
+padding:15px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.car-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.8);
+}
+footer a{
+color:#FFD700;
+text-decoration:none;
+font-weight:bold;
+margin-left:10px;
+}
+
+footer a:hover{
+text-decoration:underline;
+color:#2563eb;
+}
+.footer{
+text-align:center;
+padding:20px;
+background:black;
+margin-top:40px;
+}
